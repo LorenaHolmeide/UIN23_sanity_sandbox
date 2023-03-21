@@ -15,8 +15,8 @@ export default {
             options: {
                 source: 'product_title',
                 slugify: input => input.toLowerCase()
-                                    .replace(/[^\w-]+/g, '-')
-                                    .slice(0,150)
+                    .replace(/[^\w-]+/g, '-')
+                    .slice(0, 150)
             }
         },
         {
@@ -38,7 +38,7 @@ export default {
             name: 'category',
             title: 'Kategori',
             type: 'reference',
-            to: [{type: 'categories'}]
+            to: [{ type: 'categories' }]
         }
     ]
 }
