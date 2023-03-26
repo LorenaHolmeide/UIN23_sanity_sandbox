@@ -4,6 +4,11 @@ import { useEffect, useState } from 'react'
 
 import FrontPage from './pages/FrontPage';
 import { Routes, Route } from 'react-router-dom';
+
+import ProductPage from './pages/ProductPage';
+import CategoriesPage from './pages/CategoriesPage';
+import CategoryPage from './pages/CategoryPage';
+
 function App() {
 
   /*let PROJECTID = '2kxd9hp8'
@@ -31,6 +36,11 @@ function App() {
     <>
       <Routes>
         <Route index element={<FrontPage products={prods} />} />
+        <Route path=":slug" element={<ProductPage />} />
+        <Route path="kategori">
+          <Route index element={<CategoriesPage />} />
+          <Route path=":category" element={<CategoryPage />} />
+        </Route>
       </Routes>
 
     </>
