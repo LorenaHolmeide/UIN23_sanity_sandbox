@@ -1,3 +1,3 @@
-export default function CategoriesPage() {
-    return <h1>Alle kategorier</h1>
+export default function CategoryPage() {
+    return <h1>En kategori</h1>
 }

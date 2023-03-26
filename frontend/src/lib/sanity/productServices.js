@@ -4,6 +4,13 @@ export const fetchAllProducts = async () => {
     const data = await client.fetch(`*[_type=="products"]{product_title, slug}`)
     return data
 }
+/*
+export const fetchAllProducts = async () => {
+    const data = await client.fetch(`*[_type == "products"]`)
+    return data
+}
+*/
+
 //Service for å hente et bestemt produkt, basert på :slug
 export const fetchProduct = async (slug) => {
     const data = await client.fetch(`
